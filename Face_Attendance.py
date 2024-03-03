@@ -8,9 +8,6 @@ from datetime import datetime
 bala_image = face_recognition.load_image_file("C://Users//madha//OneDrive//Desktop//Projects//Facedetect_Attendance//bala.jpg")
 bala_encoding = face_recognition.face_encodings(bala_image)[0]
 
-ratan_image = face_recognition.load_image_file("C://Users//madha//OneDrive//Desktop//Projects//Facedetect_Attendance//tata.jpg")
-ratan_encoding = face_recognition.face_encodings(ratan_image)[0]
-
 haneef_image = face_recognition.load_image_file("C://Users//madha//OneDrive//Desktop//Projects//Facedetect_Attendance//haneef.jpg")
 haneef_encoding = face_recognition.face_encodings(haneef_image)[0]
 
@@ -19,12 +16,11 @@ haytham_encoding = face_recognition.face_encodings(haytham_image)[0]
 
 known_face_encoding = [
     bala_encoding,
-    ratan_encoding,
     haneef_encoding,
     haytham_encoding,
 ]
 
-known_faces_names = ["bala", "ratan", "haneef", "haytham"]
+known_faces_names = ["bala", "haneef", "haytham"]
 
 students = known_faces_names.copy()
 
